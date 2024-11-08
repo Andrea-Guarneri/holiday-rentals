@@ -1,6 +1,8 @@
 # 🌴 Holiday Rentals
 
-Welcome to **Holiday Rentals**, a responsive and user-friendly webpage for finding your ideal holiday home! This project offers a variety of stunning rental properties with detailed descriptions, images, and easy contact options. Created with **HTML**, **CSS** (Tailwind CSS), and custom icons, this site aims to provide a smooth user experience for all devices.
+Welcome to **Holiday Rentals**, a responsive and user-friendly webpage for finding your ideal holiday home! This project offers a variety of stunning rental properties with detailed descriptions, images, and easy contact options. Created with **HTML**, **CSS** (Tailwind CSS), and custom icons, this site aims to provide a smooth user experience across all devices.
+
+[View the project live](https://holiday-rentals-ag.netlify.app/)
 
 ## 🌐 Project Overview
 
@@ -52,3 +54,7 @@ To run this project locally:
 ## 🤝 Contributing
 
 Feel free to contribute by submitting a pull request or suggesting improvements in the Issues tab.
+
+## 💼 Contact
+
+For those interested in connecting professionally, feel free to reach out on [LinkedIn](https://www.linkedin.com/in/andreaguarneri).
