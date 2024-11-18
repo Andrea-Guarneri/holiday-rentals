@@ -24,85 +24,133 @@
 <body class="bg-gray-300 font-sans leading-normal tracking-normal">
 
     <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-teal-500 p-2">
-        <div class="container mx-auto flex justify-between items-center">
+    <header class="bg-gradient-to-r from-blue-600 to-teal-500 py-4">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
             <!-- Logo and Title -->
             <div class="flex items-center gap-x-4">
-                <img src="assets/logos/logo-holiday-rentals.png" alt="Logo" class="w-24 object-contain">
+                <!-- Logo Image -->
+                <img src="assets/logos/logo-holiday-rentals.png" alt="Holiday Rentals Logo" class="w-24 object-contain" />
+                
+                <!-- Title (Visible only on medium and larger screens) -->
                 <h1 class="text-3xl font-sans font-semibold text-white hidden md:block">Holiday Rentals</h1>
             </div>
-            <!-- Social Icons and Contact -->
-            <div class="flex items-center gap-x-2">
+            
+            <!-- Social Icons and Contact Section -->
+            <div class="flex items-center gap-x-4">
+                <!-- Contact Text (Hidden on smaller screens) -->
                 <span class="text-xl text-white font-sans font-semibold hidden md:block">Contact Us</span>
-                <!-- WhatsApp Contact -->
-                <a href="https://wa.me/YOUR_NUMBER" target="_blank"
-                    class="text-white text-lg flex items-center gap-x-2">
-                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" title="Whatsapp"
-                        class="w-12 hover:scale-110 transition-all duration-300" />
-                </a>
-                <!-- Facebook Icon -->
-                <a href="https://www.facebook.com/YOUR_PAGE" target="_blank" class="text-white">
-                    <img src="assets/icons/fblogo.png" alt="Facebook" title="Facebook"
-                        class="w-12 hover:scale-110 transition-all duration-300">
-                </a>
-                <!-- Instagram Icon -->
-                <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank" class="text-white">
-                    <img src="assets/icons/instagram.png" alt="Instagram" title="Instagram"
-                        class="w-12 hover:scale-110 transition-all duration-300">
-                </a>
+                
+                <!-- Social Media and Contact Links -->
+                <div class="flex items-center gap-x-4">
+                    <!-- WhatsApp Link -->
+                    <a href="https://wa.me/YOUR_NUMBER" target="_blank" 
+                        class="text-white hover:text-teal-300 transition-all duration-300">
+                        <img src="assets/icons/whatsapp.png" alt="Contact us on WhatsApp" title="WhatsApp" class="w-12 hover:scale-110 transition-all duration-300" />
+                    </a>
+                    
+                    <!-- Facebook Link -->
+                    <a href="https://www.facebook.com/YOUR_PAGE" target="_blank" 
+                        class="text-white hover:text-teal-300 transition-all duration-300">
+                        <img src="assets/icons/fblogo.png" alt="Facebook" title="Facebook" class="w-12 hover:scale-110 transition-all duration-300" />
+                    </a>
+                    
+                    <!-- Instagram Link -->
+                    <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank" 
+                        class="text-white hover:text-teal-300 transition-all duration-300">
+                        <img src="assets/icons/instagram.png" alt="Instagram" title="Instagram" class="w-12 hover:scale-110 transition-all duration-300" />
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Hero Section and Banner -->
     <section class="bg-cover bg-center h-[80vh] relative" style="background-image: url('assets/banner/banner-holiday-rental.jpg');">
+        <!-- Overlay to darken the background for better readability -->
         <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-40">
-            <h2 class="text-4xl font-bold text-white text-center">Find Your Perfect Holiday Home</h2>
-            
+
+            <!-- Centered Content Container -->
+                <div class="container">
+                    <div class="text-center px-4 sm:px-0 flex flex-col">
+                        
+                        <!-- Main Title -->
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white">Find Your Perfect Holiday Home</h1>
+                
+                        <p class="text-lg text-gray-200 mt-4">Book your dream getaway with just a click</p>
+                
+                        <!-- Hero Section Search-bar -->
+                        <div class="mt-4 flex items-center bg-white rounded-full mx-auto w-full max-w-md md:max-w-lg ">
+                            
+                            <!-- Search-bar  -->
+                            <div
+                                class="bg-orange-500 px-8 py-3 md:p-4 h-full cursor-pointer rounded-l-full flex items-center justify-center">
+                                <!-- icon -->
+                                <img src="assets/icons/search.png" alt="Search Icon"
+                                    class="h-6 w-7 hover:scale-110 transition-all duration-5">
+                            </div>
+                
+                            <input type="text" placeholder="Search for house..."
+                                class="bg-transparent w-full focus:outline-none text-lg text-gray-800 px-2">
+                        </div>
+
+                        <!-- Button book Now -->
+                        <button type="button" href="#"
+                            class="mt-8 inline-flex px-6 py-2 max-w-32 mx-auto rounded-full font-semibold text-white bg-orange-500 hover:bg-orange-600 transition-all duration-300">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                    </a>
+                </div>
+
+            </div>
+
             <!-- Scroll Indicator -->
             <div class="absolute flex flex-col items-center bottom-6 left-1/2 transform -translate-x-1/2">
-              <span class="mb-2 text-sm text-white">Scroll Down</span>
-              <img src="assets/icons/arrow-down.png" alt="Scroll Down Arrow" class="w-6 h-6 animate-bounce">
-          </div>
+                <span class="mb-2 text-sm text-white">Scroll Down</span>
+                <img src="assets/icons/arrow-down.png" alt="Scroll Down Arrow" class="w-6 h-6 animate-bounce">
+            </div>
         </div>
     </section>
 
+
     <!-- About Us Section -->
-    <section class="bg-white py-12">
+    <section class="bg-white py-16 md:py-24">
         <div class="container mx-auto px-6">
             <!-- Section Title -->
-            <h3 class="text-3xl font-semibold text-gray-800 mb-8 text-center">About Us</h3>
+            <h3 class="text-4xl font-bold text-gray-800 mb-12 text-center">About Us</h3>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <!-- Text Content -->
                 <div>
-                    <h4 class="text-2xl font-semibold text-blue-600 mb-4">Welcome to Holiday Rentals</h4>
-                    <p class="text-gray-700 text-lg mb-4">
+                    <h4 class="text-2xl font-semibold text-blue-600 mb-6">Welcome to Holiday Rentals</h4>
+                    <p class="text-gray-700 text-lg mb-4 leading-relaxed text-justify">
                         At Holiday Rentals, we believe in creating unforgettable holiday experiences. Whether you're
                         looking for a cozy beachfront bungalow, a luxury mountain villa, or a chic city apartment, we
                         have something for every traveler.
                     </p>
-                    <p class="text-gray-700 text-lg mb-4">
+                    <p class="text-gray-700 text-lg mb-4 leading-relaxed text-justify">
                         Established in 2010, we have grown into a trusted name in the holiday rental industry, offering
                         handpicked properties with top-notch amenities. Our goal is to ensure your stay is nothing short
                         of perfect.
                     </p>
-                    <p class="text-gray-700 text-lg">
+                    <p class="text-gray-700 text-lg leading-relaxed text-justify">
                         From stunning locations to exceptional customer service, we’re here to help you make lifelong
                         memories.
                     </p>
                 </div>
 
                 <!-- Image Gallery -->
-                <div class="grid grid-cols-2 gap-4">
-                    <img src="assets/images/about1.jpg" alt="About Image 1" class="rounded-lg shadow-md object-cover">
-                    <img src="assets/images/about2.jpg" alt="About Image 2" class="rounded-lg shadow-md object-cover">
-                    <img src="assets/images/about3.jpg" alt="About Image 3" class="rounded-lg shadow-md object-cover">
-                    <img src="assets/images/about4.jpg" alt="About Image 4" class="rounded-lg shadow-md object-cover">
+                <div class="grid grid-cols-2 gap-6 md:gap-8">
+                    <img src="assets/images/about1.jpg" alt="About Image 1" class="rounded-xl shadow-xl object-cover h-full w-full transition-transform transform hover:scale-105 cursor-pointer">
+                    <img src="assets/images/about2.jpg" alt="About Image 2" class="rounded-xl shadow-xl object-cover h-full w-full transition-transform transform hover:scale-105 cursor-pointer">
+                    <img src="assets/images/about3.jpg" alt="About Image 3" class="rounded-xl shadow-xl object-cover h-full w-full transition-transform transform hover:scale-105 cursor-pointer">
+                    <img src="assets/images/about4.jpg" alt="About Image 4" class="rounded-xl shadow-xl object-cover h-full w-full transition-transform transform hover:scale-105 cursor-pointer">
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Property Cards Section -->
     <section class="container mx-auto px-6 py-12">
@@ -111,18 +159,17 @@
         <!-- Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Card Property 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer">
                 
                 <!-- Property Image -->
                 <img src="assets/images/bungalow.jpg" alt="Cozy Beachfront Bungalow" class="w-full h-48 object-cover">
                 <div class="p-6">
                     
                     <!-- Property Name -->
-                    <h4 class="text-2xl font-semibold text-gray-900">Cozy Beachfront Bungalow</h4>
+                    <h4 class="text-2xl font-semibold text-gray-900 line-clamp-1">Cozy Beachfront Bungalow</h4>
 
                     <!-- Property Description -->
-                    <p class="text-gray-700 mt-2">Enjoy a relaxing stay by the beach with stunning views and modern
-                        amenities.</p>
+                    <p class="text-gray-700 mt-2 line-clamp-2">Enjoy a serene and rejuvenating stay by the beach, where breathtaking views and modern amenities come together to create the perfect getaway. Wake up to the sound of waves.</p>
                     
                     <!-- Rating and Rented -->
                     <div class="mt-4 flex items-center cursor-pointer gap-x-2">
@@ -154,25 +201,24 @@
                             hover:bg-green-700 transition-all duration-300 flex items-center">
                             <!-- WhatsApp Icon -->
                             <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-4 h-4 md:w-5 md:h-5 mr-2"/>
-                            Contact via WhatsApp
+                            WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
 
             <!-- Card Property 2 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer">
                 <!-- Property Image -->
                 <img src="assets/images/modernapartment.jpg" alt="Modern City Apartment"
                     class="w-full h-48 object-cover">
                 <div class="p-6">
                     
                     <!-- Property Name -->
-                    <h4 class="text-2xl font-semibold text-gray-900">Modern City Apartment</h4>
+                    <h4 class="text-2xl font-semibold text-gray-900 line-clamp-1">Modern City Apartment</h4>
                     
                     <!-- Property Description -->
-                    <p class="text-gray-700 mt-2">Stay in the heart of the city with easy access to all main
-                        attractions.</p>
+                    <p class="text-gray-700 mt-2 line-clamp-2">Stay in the vibrant heart of the city, where convenience meets comfort! Enjoy unparalleled access to all the main attractions, dining hotspots, and cultural landmarks, making your stay truly unforgettable. </p>
                     
                     <!-- Rating and Rented -->
                     <div class="mt-4 flex items-center cursor-pointer gap-x-2">
@@ -203,24 +249,24 @@
                             class="text-white bg-green-500 rounded-full px-3 py-2 sm:px-4 sm:py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm sm:text-base">
                             <!-- WhatsApp Icon -->
                             <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-4 h-4 sm:w-5 sm:h-5 mr-2"/>
-                            Contact via WhatsApp
+                            WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
 
             <!-- Card Property 3 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer">
                 <!-- Property Image -->
                 <img src="assets/images/luxurymountainvilla.jpg" alt="Luxury Mountain Villa"
                     class="w-full h-48 object-cover">
                 <div class="p-6">
                     
                     <!-- Property Name -->
-                    <h4 class="text-2xl font-semibold text-gray-900">Luxury Mountain Villa</h4>
+                    <h4 class="text-2xl font-semibold text-gray-900 line-clamp-1">Luxury Mountain Villa</h4>
                     
                     <!-- Property Description -->
-                    <p class="text-gray-700 mt-2">Experience the tranquility of the mountains in this luxurious villa.
+                    <p class="text-gray-700 mt-2 line-clamp-2">mmerse yourself in the serene beauty of the mountains with this luxurious villa, offering breathtaking views, modern amenities, and a peaceful.
                     </p>
                     
                     <!-- Rating and Rented -->
@@ -239,7 +285,7 @@
                         </div>
                         
                         <!-- Property rented number -->
-                        <span class="text-gray-600 text-sm ml-2">(2450 rented)</span>
+                        <span class="text-gray-600 text-sm">(2450 rented)</span>
                     </div>
                     
                     <!-- Price and WhatsApp Contact Section -->
@@ -253,23 +299,23 @@
                             class="text-white bg-green-500 rounded-full px-3 py-2 sm:px-4 sm:py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm sm:text-base">
                             <!-- WhatsApp Icon -->
                             <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-4 h-4 sm:w-5 sm:h-5 mr-2"/>
-                            Contact via WhatsApp
+                            WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
 
             <!-- Card Property 4 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer">
                 <!-- Property Image -->
                 <img src="assets/images/frenchriviera.jpg" alt="French Riviera" class="w-full h-48 object-cover">
                 <div class="p-6">
                     
                     <!-- Property Name -->
-                    <h4 class="text-2xl font-semibold text-gray-900">Apartment French Riviera</h4>
+                    <h4 class="text-2xl font-semibold text-gray-900 line-clamp-1">Apartment French Riviera</h4>
                     
                     <!-- Property Description -->
-                    <p class="text-gray-700 mt-2">Welcome to the ultimate rental destination on the French Riviera!
+                    <p class="text-gray-700 mt-2 line-clamp-2">Welcome to the pinnacle of luxury and elegance on the French Riviera! This ultimate rental destination offers stunning coastal views, world-class amenities, and an unforgettable experience.
                     </p>
                     
                     <!-- Rating and Rented -->
@@ -302,24 +348,23 @@
                             class="text-white bg-green-500 rounded-full px-3 py-2 sm:px-4 sm:py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm sm:text-base">
                             <!-- WhatsApp Icon -->
                             <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-4 h-4 sm:w-5 sm:h-5 mr-2"/>
-                            Contact via WhatsApp
+                            WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
 
             <!-- Card Property 5 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer">
                 <!-- Property Image -->
                 <img src="assets/images/chatel.jpg" alt="Apartment Alpina Châtel" class="w-full h-48 object-cover">
                 <div class="p-6">
                     
                     <!-- Property Name -->
-                    <h4 class="text-2xl font-semibold text-gray-900">Apartment Alpina Châtel</h4>
+                    <h4 class="text-2xl font-semibold text-gray-900 line-clamp-1">Apartment Alpina Châtel</h4>
                     
                     <!-- Property Description -->
-                    <p class="text-gray-700 mt-2">The Alpina apartment Châtel is a duplex that can comfortably
-                        accommodate 4 people.
+                    <p class="text-gray-700 mt-2 line-clamp-2">The Alpina Apartment in Châtel is a charming and spacious duplex designed to comfortably accommodate up to 4 guests. Nestled in a picturesque alpine.
                     </p>
                     
                     <!-- Rating and Rented -->
@@ -351,24 +396,23 @@
                             class="text-white bg-green-500 rounded-full px-3 py-2 sm:px-4 sm:py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm sm:text-base">
                             <!-- WhatsApp Icon -->
                             <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-4 h-4 sm:w-5 sm:h-5 mr-2"/>
-                            Contact via WhatsApp
+                            WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
 
             <!-- Card Property 6 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer">
                 <!-- Property Image -->
                 <img src="assets/images/amalficoast.jpg" alt="House 3" class="w-full h-48 object-cover">
                 <div class="p-6">
                     
                     <!-- Property Name -->
-                    <h4 class="text-2xl font-semibold text-gray-900">Apartment Amalfi Coast</h4>
+                    <h4 class="text-2xl font-semibold text-gray-900 line-clamp-1">Apartment Amalfi Coast</h4>
 
                     <!-- Property Description -->
-                    <p class="text-gray-700 mt-2">Discover your perfect Amalfi Coast retreat! Our rentals offer
-                        breathtaking panoramic views.
+                    <p class="text-gray-700 mt-2 line-clamp-2">Discover your ideal retreat on the Amalfi Coast! Our exclusive rentals provide not only breathtaking panoramic views but also the perfect blend of luxury and comfort.
                     </p>
                     
                     <!-- Rating and Rented -->
@@ -400,8 +444,203 @@
                             class="text-white bg-green-500 rounded-full px-3 py-2 sm:px-4 sm:py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm sm:text-base">
                             <!-- WhatsApp Icon -->
                             <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-4 h-4 sm:w-5 sm:h-5 mr-2"/>
-                            Contact via WhatsApp
+                            WhatsApp
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section class="relative w-full py-32">
+        <h3 class="text-4xl font-semibold text-gray-800 text-center mb-8">Featured Properties</h3>
+
+        <!-- Banner with Static Background Image -->
+        <div class="relative bg-black min-h-[600px] flex items-center justify-center"> 
+            <!-- Banner Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center opacity-50 z-0" style="background-image: url('assets/banner/banner-keywest.jpg');"></div>
+
+            <!-- Featured Properties Grid -->
+            <div class="relative z-10 w-full px-6">
+                <!-- Flexbox Grid for Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
+
+                    <!-- Featured Property 1 -->
+                    <div class="bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+                        
+                        <!-- Property Image -->
+                        <img src="assets/images/exclusive-luxury-villa.jpg" alt="Exclusive Luxury Villa" class="w-full h-56 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            
+                            <!-- Property Name -->
+                            <h4 class="text-2xl font-semibold text-gray-900 mb-2 line-clamp-1">Exclusive Luxury Villa</h4>
+                            
+                            <!-- Property Description -->
+                            <p class="text-gray-700 mb-4 line-clamp-2">Experience unmatched luxury in this villa offering panoramic views and state-of-the-art amenities for an extraordinary escape.</p>
+
+                            <!-- Rating and Rented -->
+                            <div class="mt-4 flex items-center cursor-pointer gap-x-2">
+                                
+                                <!-- Numerical Rating -->
+                                <span class="text-sm font-medium text-gray-800">4.4</span>
+                                
+                                <!-- Star Rating Images (5 stars) -->
+                                <div class="flex">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/outline-gold-star.png" alt="Star" class="w-4 h-4 fill-current">
+                                </div>
+                                <!-- Property rented number -->
+                                <span class="text-gray-600 text-sm">(1326 rented)</span>
+                            </div>
+                           
+                            <div class="flex justify-between items-center">
+                                
+                                <!-- Property Price -->
+                                <p class="text-blue-500 font-bold">$1450 / night</p>
+                                
+                                <!-- Whatsapp contact and icon -->
+                                <a href="https://wa.me/YOUR_NUMBER" target="_blank"
+                                    class="text-white bg-green-500 rounded-full px-3 py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm">
+                                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-5 h-5 mr-2"/> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Property 2 -->
+                    <div class="bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+                        <!-- Property Image -->
+                        <img src="assets/images/modern-mountain-retreat.avif" alt="Modern Mountain Retreat" class="w-full h-56 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            
+                            <!-- Property Name -->
+                            <h4 class="text-2xl font-semibold text-gray-900 mb-2 line-clamp-1">Modern Mountain Retreat</h4>
+                            
+                            <!-- Property Description -->
+                            <p class="text-gray-700 mb-4 line-clamp-2">This stunning mountain retreat combines luxury and nature, offering a cozy space with panoramic views of the surrounding peaks.</p>
+
+                            <!-- Rating and Rented -->
+                            <div class="mt-4 flex items-center cursor-pointer gap-x-2">
+                                
+                                <!-- Numerical Rating -->
+                                <span class="text-sm font-medium text-gray-800">4.3</span>
+                                
+                                <!-- Star Rating Images (5 stars) -->
+                                <div class="flex">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/half-gold-star.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/outline-gold-star.png" alt="Star" class="w-4 h-4 fill-current">
+                                </div>
+                                <!-- Property rented number -->
+                                <span class="text-gray-600 text-sm">(1056 rented)</span>
+                            </div>
+                           
+                            <div class="flex justify-between items-center">
+                                
+                                <!-- Property Price -->
+                                <p class="text-blue-500 font-bold">$800 / night</p>
+
+                                <!-- Whatsapp contact and icon -->
+                                <a href="https://wa.me/YOUR_NUMBER" target="_blank"
+                                    class="text-white bg-green-500 rounded-full px-3 py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm">
+                                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-5 h-5 mr-2"/> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Property 3 -->
+                    <div class="bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+                        <!-- Property Image -->
+                        <img src="assets/images/oceanfront-paradise.jpeg" alt="Oceanfront Paradise" class="w-full h-56 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            
+                            <!-- Property Name -->
+                            <h4 class="text-2xl font-semibold text-gray-900 mb-2 line-clamp-1">Oceanfront Paradise</h4>
+                            
+                            <!-- Property Description -->
+                            <p class="text-gray-700 mb-4 line-clamp-2">Relax in an oceanfront paradise, where stunning views and luxurious accommodations make this retreat perfect for a peaceful getaway.</p>
+
+                            <!-- Rating and Rented -->
+                            <div class="mt-4 flex items-center cursor-pointer gap-x-2">
+                                
+                                <!-- Numerical Rating -->
+                                <span class="text-sm font-medium text-gray-800">4.5</span>
+                                
+                                <!-- Star Rating Images (5 stars) -->
+                                <div class="flex">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/half-gold-star.png" alt="Star" class="w-4 h-4 fill-current">
+                                </div>
+                                <!-- Property rented number -->
+                                <span class="text-gray-600 text-sm">(3416 rented)</span>
+                            </div>
+                           
+                            <div class="flex justify-between items-center">
+                                
+                                <!-- Property Price -->
+                                <p class="text-blue-500 font-bold">$1200 / night</p>
+                                
+                                <!-- Whatsapp contact and icon -->
+                                <a href="https://wa.me/YOUR_NUMBER" target="_blank"
+                                    class="text-white bg-green-500 rounded-full px-3 py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm">
+                                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-5 h-5 mr-2"/> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Property 4 -->
+                    <div class="bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+                        <!-- Property Image -->
+                        <img src="assets/images/cozy-bach-house.avif" alt="Cozy Beach House" class="w-full h-56 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            
+                            <!-- Property Name -->
+                            <h4 class="text-2xl font-semibold text-gray-900 mb-2 line-clamp-1">Cozy Beach House</h4>
+                            
+                            <!-- Property Description -->
+                            <p class="text-gray-700 mb-4 line-clamp-2">Nestled along the coastline, this cozy beach house offers a perfect retreat for those seeking relaxation and stunning ocean views.</p>
+
+                            <!-- Rating and Rented -->
+                            <div class="mt-4 flex items-center cursor-pointer gap-x-2">
+                                
+                                <!-- Numerical Rating -->
+                                <span class="text-sm font-medium text-gray-800">4.4</span>
+                                
+                                <!-- Star Rating Images (5 stars) -->
+                                <div class="flex">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/star-gold-favorite.png" alt="Star" class="w-4 h-4 fill-current">
+                                    <img src="assets/icons/outline-gold-star.png" alt="Star" class="w-4 h-4 fill-current">
+                                </div>
+                                <!-- Property rented number -->
+                                <span class="text-gray-600 text-sm">(4127 rented)</span>
+                            </div>
+                           
+                            <div class="flex justify-between items-center">
+                                
+                                <!-- Property Price -->
+                                <p class="text-blue-500 font-bold">$750 / night</p>
+                                
+                                <!-- Whatsapp contact and icon -->
+                                <a href="https://wa.me/YOUR_NUMBER" target="_blank"
+                                    class="text-white bg-green-500 rounded-full px-3 py-2 hover:bg-green-700 transition-all duration-300 flex items-center text-sm">
+                                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="w-5 h-5 mr-2"/> WhatsApp
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
